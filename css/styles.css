@@ -35,4 +35,17 @@
   border: 2px solid lightpink;
   display: none;
   padding: 15px;
+  margin: 5px;
+}
+
+@media screen and (max-width = 600px) {
+  #personInput {
+    float: none;
+  }
+  .contactNameDisplay {
+    float: none;
+  }
+  #contactInfo {
+    float: none;
+  }
 }
