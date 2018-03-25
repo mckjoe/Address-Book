@@ -5,6 +5,9 @@ var Contact = function(firstName, lastName, telephoneNumber, address) {
   this.address = address;
 }
 
+Contact.prototype.name = function(firstName, lastName) {
+  return this.lastName + ", " + this.firstName;
+}
 
 $(document).ready(function() {
   $("#personInput").submit(function(event) {
@@ -14,6 +17,13 @@ $(document).ready(function() {
     var telephoneNumber = $("#telephoneNumber").val();
     var address = $("#address").val();
     var newContact = new Contact(firstName, lastName, telephoneNumber, address);
-    console.log(newContact);
+    var displayName = newContact.name(firstName, lastName);
+    $("#contacts").append("<li>" + lastName + "</li>");
+    $("li").last().click(function() {
+      $("#contactInfo h3").text(displayName);
+      $("#contactInfo h5").text(telephoneNumber);
+      $("#contactInfo h5#last").text(address);
+
+    });
   });
 });

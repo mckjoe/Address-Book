@@ -6,3 +6,9 @@
   width: 500px;
   margin: 25px 35px;
 }
+
+#contacts li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
