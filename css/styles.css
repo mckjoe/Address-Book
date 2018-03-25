@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+#personInput {
+  width: 500px;
+  margin: 25px 35px;
+}
