@@ -12,6 +12,7 @@ Contact.prototype.name = function(firstName, lastName) {
 $(document).ready(function() {
   $("#personInput").submit(function(event) {
     event.preventDefault();
+    $(".contactNameDisplay").show();
     var firstName = $("#firstName").val();
     var lastName = $("#lastName").val();
     var telephoneNumber = $("#telephoneNumber").val();
@@ -23,7 +24,7 @@ $(document).ready(function() {
       $("#contactInfo h3").text(displayName);
       $("#contactInfo h5").text(telephoneNumber);
       $("#contactInfo h5#last").text(address);
-
+      $("#contactInfo").show();
     });
   });
 });

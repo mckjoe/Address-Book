@@ -5,10 +5,34 @@
 #personInput {
   width: 500px;
   margin: 25px 35px;
+  background-color: lightpink;
+  border: 2px solid lightgreen;
+  padding: 5px;
+  float: left;
 }
 
 #contacts li:hover {
   cursor: pointer;
   text-decoration: underline;
   color: blue;
+}
+
+
+#contactInfo {
+  width: 500px;
+  margin: 25px 35px;
+  background-color: lightpink;
+  border: 2px solid lightgreen;
+  padding: 25px;
+  float: left;
+  display: none;
+}
+
+.contactNameDisplay {
+  width: 200px;
+  float: left;
+  background-color: lightgreen;
+  border: 2px solid lightpink;
+  display: none;
+  padding: 15px;
 }
