@@ -11,37 +11,45 @@
   </head>
   <body>
     <div class="wrapper">
-      <h2>Address Book</h2>
-      <form id="personInput">
-        <div class="form-group">
-          <label for="firstName">enter your first name:</label>
-          <input id="firstName" type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="lastName">enter your last name:</label>
-          <input id="lastName" type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="telephoneNumber">enter your telephone number:</label>
-          <input id="telephoneNumber" type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="address">enter your home address:</label>
-          <input id="address" type="text" class="form-control">
-        </div>
-        <button type="submit">add person</button>
-      </form>
+      <div class="disapear">
+        <h2>Address Book</h2>
+        <form id="personInput">
+          <div class="form-group">
+            <label for="firstName">enter your first name:</label>
+            <input id="firstName" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="lastName">enter your last name:</label>
+            <input id="lastName" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="telephoneNumber">enter your telephone number:</label>
+            <input id="telephoneNumber" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="address">enter your home address:</label>
+            <input id="address" type="text" class="form-control">
+          </div>
+          <button type="submit">add person</button>
+        </form>
+        <img id="temporary" src="img/addypic.jpg">
+        <div class="contactNameDisplay">
+          <ol id="contacts">
 
-      <div class="contactNameDisplay">
-        <ol id="contacts">
+          </ol>
+        </div>
 
-        </ol>
+        <div id="contactInfo">
+          <h3> </h3>
+          <h5> </h5>
+          <h5 id="last"> </h5>
+          <button id="call" class="btn btn-success">call</button>
+          <button id="sendLetter" class="btn btn-info">Send letter</button>
+        </div>
       </div>
-
-      <div id="contactInfo">
-        <h3> </h3>
-        <h5> </h5>
-        <h5 id="last"> </h5>
+      <div class="calling">
+        <p>Please wait while your call is being connected</p>
+        <img src="img/calling.jpg">
       </div>
 
     </div>

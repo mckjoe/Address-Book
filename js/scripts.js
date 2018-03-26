@@ -13,6 +13,7 @@ $(document).ready(function() {
   $("#personInput").submit(function(event) {
     event.preventDefault();
     $(".contactNameDisplay").show();
+    $("#temporary").hide();
     var firstName = $("#firstName").val();
     var lastName = $("#lastName").val();
     var telephoneNumber = $("#telephoneNumber").val();
@@ -25,6 +26,13 @@ $(document).ready(function() {
       $("#contactInfo h5").text(telephoneNumber);
       $("#contactInfo h5#last").text(address);
       $("#contactInfo").show();
+    });
+    $("#call").click(function() {
+      $(".disapear").hide();
+      $(".calling").show();
+    });
+    $("#sendLetter").click(function() {
+      alert("oops, sorry!  That button is not set up yet!")
     });
   });
 });
